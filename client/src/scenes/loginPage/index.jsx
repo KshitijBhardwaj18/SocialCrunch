@@ -1,5 +1,6 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
+const BASE_URL = process.env.BASE_URL;
 
 const LoginPage = () => {
   const theme = useTheme();
@@ -13,7 +14,7 @@ const LoginPage = () => {
         textAlign="center"
       >
         <Typography fontWeight="bold" fontSize="32px" color="primary">
-          Sociopedia
+          SocialCrunch
         </Typography>
       </Box>
 
@@ -25,7 +26,7 @@ const LoginPage = () => {
         backgroundColor={theme.palette.background.alt}
       >
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
-          Welcome to Socipedia, the Social Media for Sociopaths!
+          Welcome to SocialCrunch, the Social Media for Sociopaths!
         </Typography>
         <Form />
       </Box>
